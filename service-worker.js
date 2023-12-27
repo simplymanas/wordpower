@@ -3,7 +3,7 @@ const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/path-to-your-icon/icon.png', // Add the path to your icon here
+  '/wordpowergame.jpeg', 
   '/script.js',
   '/styles.css'
 ];
