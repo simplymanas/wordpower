@@ -2,23 +2,62 @@ body {
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 50px;
+    background-color: #f6f8fa; /* Light grayish blue background color */
 }
 
 #app {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1a73e8; /* Google Blue */
+}
+
+p {
+    color: #5f6368; /* Google Gray */
+    margin-bottom: 20px;
 }
 
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #34a853; /* Google Green */
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2d8e5f; /* Darker green on hover */
+}
+
+#wordChain {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#credits {
+    margin-top: 30px;
+}
+
+#credits p {
+    color: #5f6368; /* Google Gray */
+    font-size: 14px;
+}
+
+#credits a {
+    color: #4285f4; /* Google Blue */
+    text-decoration: none;
 }
