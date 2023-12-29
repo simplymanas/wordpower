@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div id="app">
+        <a href="https://www.youtube.com/@DevanshsGalaxy" target="_blank" id="youtubeIcon">
+            <img src="youtube_devansh.png" alt="YouTube Icon">
+        </a>
+        <!-- ... (existing content) ... -->
+    </div>
     <title>Word Power Game</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <div id="app">
-        <h1>Word Power Game</h1>
-        <p>Challenge yourself with the Word Power Game! Enter words that start with the last letter of the previous word and see how far you can go.</p>
-        <label for="wordInput">Enter a word:</label>
-        <input type="text" id="wordInput">
-        <button onclick="addToChain()">Add to Chain</button>
+        <h1>🔤 Word Power Game 🔤</h1>
+        <p>Challenge yourself with the Word Power Game! Enter words that start with the last letter of the previous word and see how far you can go. 😄</p>
+        <label for="wordInput">Your word:</label>
+        <input type="text" id="wordInput" placeholder="Type here...">
+        <button id="goButton">GO</button>
+        <button id="clearButton">CLEAR</button>
+      <div id="achievements"></div>
         <div id="wordChain"></div>
+        <div id="scoreBadge">
+            <div id="score">Score: <span id="scoreValue">0</span></div>
+            <div id="badge"></div>
+        </div>
 
         <div id="credits">
-            <p>Created by @simplymanas
-            | Powered by <a href="https://www.datamuse.com/api/" target="_blank">Datamuse API</a></p>
+            <p>Idea by Devansh Dash | Developed by @simplymanas | Powered by <a href="https://www.datamuse.com/api/" target="_blank">Datamuse API</a></p>
         </div>
     </div>
     <script src="script.js"></script>
     <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then((registration) => console.log('Service Worker registered with scope:', registration.scope))
-      .catch((error) => console.error('Service Worker registration failed:', error));
-  }
-</script>
-
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => console.log('Service Worker registered with scope:', registration.scope))
+                .catch((error) => console.error('Service Worker registration failed:', error));
+        }
+    </script>
 </body>
 </html>
