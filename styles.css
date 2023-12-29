@@ -1,46 +1,64 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     text-align: center;
     margin: 50px;
-    background-color: #f6f8fa; /* Light grayish blue background color */
 }
 
 #app {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff; /* White background color */
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+
+#youtubeIcon {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+}
+
+#youtubeIcon img {
+    width: 40px; /* Adjust the width as needed */
 }
 
 h1 {
-    color: #1a73e8; /* Google Blue */
+    color: #ff6347; /* Tomato */
 }
 
 p {
-    color: #5f6368; /* Google Gray */
+    color: #008080; /* Teal */
     margin-bottom: 20px;
 }
 
 input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
 }
 
 button {
-    background-color: #34a853; /* Google Green */
     color: white;
     padding: 12px 18px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:nth-child(odd) {
+    background-color: #32cd32; /* LimeGreen */
+}
+
+button:nth-child(even) {
+    background-color: #ff4500; /* OrangeRed */
 }
 
 button:hover {
-    background-color: #2d8e5f; /* Darker green on hover */
+    background-color: #228b22; /* ForestGreen on hover */
 }
 
 #wordChain {
@@ -48,16 +66,37 @@ button:hover {
     font-size: 18px;
 }
 
+#scoreBadge {
+    position: relative;
+    text-align: right;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b0082; /* Indigo */
+}
+
+#badge {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: url('path/to/your/badge-image.png') no-repeat center center;
+    background-size: cover;
+}
+
 #credits {
     margin-top: 30px;
 }
 
 #credits p {
-    color: #5f6368; /* Google Gray */
+    color: #2f4f4f; /* DarkSlateGray */
     font-size: 14px;
 }
 
 #credits a {
-    color: #4285f4; /* Google Blue */
+    color: #4169e1; /* RoyalBlue */
     text-decoration: none;
 }
