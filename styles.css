@@ -21,7 +21,8 @@ body {
 }
 
 #youtubeIcon img {
-    width: 40px; /* Adjust the width as needed */
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
 }
 
 h1 {
