@@ -15,13 +15,13 @@ body {
 
 #youtubeIcon {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
+    top: 10px;
+    right: 10px;
 }
 
 #youtubeIcon img {
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
+    width: 80px;
+    height: 80px;
 }
 
 h1 {
@@ -99,4 +99,11 @@ button:hover {
 #credits a {
     color: #4169e1; /* RoyalBlue */
     text-decoration: none;
+}
+
+/* Additional media query for mobile devices */
+@media (max-width: 768px) {
+    body, h1, p, input, button, #score, #credits p, #credits a {
+        font-family: Arial, sans-serif !important; /* Ensuring override */
+    }
 }
